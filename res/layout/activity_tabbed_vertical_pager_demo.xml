@@ -29,14 +29,15 @@
             android:layout_weight="1"
             android:text="#3" />
     </RadioGroup>
-    <com.github.ysamlan.horizontalpager.HorizontalPager
+    <com.github.ysamlan.horizontalpager.VerticalPager
         android:id="@+id/horizontal_pager"
         android:layout_width="fill_parent"
         android:layout_height="0px"
         android:layout_weight="1">
-        <ScrollView
+        <HorizontalScrollView
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent">
+            android:layout_height="fill_parent"
+            >
             <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
@@ -45,8 +46,8 @@
                 android:textColor="#000"
                 android:textStyle="bold"
                 android:background="#f00" />
-        </ScrollView>
-        <ScrollView
+        </HorizontalScrollView>
+        <HorizontalScrollView
             android:layout_width="fill_parent"
             android:layout_height="fill_parent">
             <TextView
@@ -57,8 +58,8 @@
                 android:textColor="#000"
                 android:textStyle="bold"
                 android:background="#0f0" />
-        </ScrollView>
-        <ScrollView
+        </HorizontalScrollView>
+        <HorizontalScrollView
             android:layout_width="fill_parent"
             android:layout_height="fill_parent">
             <TextView
@@ -69,11 +70,12 @@
                 android:textColor="#fff"
                 android:textStyle="bold"
                 android:background="#00f" />
-        </ScrollView>
-    </com.github.ysamlan.horizontalpager.HorizontalPager>
+        </HorizontalScrollView>
+    </com.github.ysamlan.horizontalpager.VerticalPager>
+        
     <Button
         android:id="@+id/simple_demo_btn"
         android:layout_height="wrap_content"
         android:layout_width="fill_parent"
-        android:text="Horizontal Simple Demo" />    
+        android:text="Vertical Simple Demo" />    
 </LinearLayout>

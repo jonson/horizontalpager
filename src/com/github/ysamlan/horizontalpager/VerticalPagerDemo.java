@@ -12,14 +12,14 @@ import android.widget.TextView;
  *
  * @author Marc Reichelt, <a href="http://www.marcreichelt.de/">http://www.marcreichelt.de/</a>
  */
-public class HorizontalPagerDemo extends Activity {
+public class VerticalPagerDemo extends Activity {
 
     @Override
     public void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         // Create the view switcher
-        AbstractPager realViewSwitcher = new HorizontalPager(getApplicationContext());
+        AbstractPager realViewSwitcher = new VerticalPager(getApplicationContext());
 
         // Add some views to it
         final int[] backgroundColors =
@@ -53,7 +53,7 @@ public class HorizontalPagerDemo extends Activity {
         realViewSwitcher.setOnScreenSwitchListener(onScreenSwitchListener);
     }
 
-    private final HorizontalPager.OnScreenSwitchListener onScreenSwitchListener =
+    private final AbstractPager.OnScreenSwitchListener onScreenSwitchListener =
             new HorizontalPager.OnScreenSwitchListener() {
                 @Override
                 public void onScreenSwitched(final int screen) {
@@ -62,7 +62,7 @@ public class HorizontalPagerDemo extends Activity {
                      * completely visible and the animation has stopped (might be useful for
                      * removing / adding new views)
                      */
-                    Log.d("HorizontalPager", "switched to screen: " + screen);
+                    Log.d("VerticalPager", "switched to screen: " + screen);
                 }
             };
 }

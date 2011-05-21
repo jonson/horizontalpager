@@ -16,15 +16,21 @@
         android:icon="@drawable/icon"
         android:label="@string/app_name">
         <activity
-            android:name=".TabbedHorizontalPagerDemo"
+            android:name=".MainPagerDemo"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".HorizontalPagerDemo"
-            android:label="@string/app_name" />
+        
+        <activity android:name=".TabbedHorizontalPagerDemo"
+        		  android:label="@string/horizontal_title"/>
+        <activity android:name=".HorizontalPagerDemo"
+        		  android:label="@string/horizontal_title"/>
+        <activity android:name=".TabbedVerticalPagerDemo"
+        		  android:label="@string/vertical_title"/>
+        <activity android:name=".VerticalPagerDemo"
+        		  android:label="@string/vertical_title"/>
     </application>
 </manifest>
